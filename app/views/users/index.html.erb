@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>login and registration<title>
+
+    <h1>Login<h1>
+    <form action="/title" method="POST">
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+    <input type="email" name="login[email]" placeholder="email">
+    <input type="password" name="login[password]" placeholder="password">
+    <input type="submit" name="submit" class="submit">
+    <form>
+    
+    <h1>Register<h1>
+    <form action="/users" method="POST">
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+    <input type="text" name="user[name]" placeholder="name">
+    <input type="email" name="user[email]" placeholder="email">
+    <input type="password" name="user[password]" placeholder="password">
+    <input type="password" name="user[password_confirmation]" placeholder="password_confirmation">
+    <input type="submit" name="submit" class="submit">
+  </head>
+  <body>
+  </body>
